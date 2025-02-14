@@ -67,6 +67,6 @@ async def get_book(book_id: int):
     """Retrieve a book by its ID"""
     book = db.books.get(book_id) # Fetch the book from the database
     
-    if not book:
+    if not book: # Checks 
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Book not found")
     return book
