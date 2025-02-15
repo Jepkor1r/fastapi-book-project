@@ -38,11 +38,12 @@ jobs:
 
             # Verify installations
             docker --version
-            docker-compose --version
+            docker compose --version
 
             # Navigate to the project directory and deploy
             cd /home/ubuntu/
             git clone https://github.com/Jepkor1r/fastapi-book-project.git
             cd fastapi-book-project/
             git pull
-            docker-compose up -d --build
+            docker compose up -d --build
+            
